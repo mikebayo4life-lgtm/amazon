@@ -4,82 +4,78 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-}
 
 .header {
     background-color: #151d28;
-    padding: 10px;  
+    padding: 10px 20px;  
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
     color: white;
 }
 
+.mul a img{
+    display: none;
+    border-radius: 10px;
+}
+
 .locate p a {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 22px;
-    margin: 36px;
+    font-size: 10px;
+    margin: 20px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 15px;
     text-decoration: none;
     color: rgb(204, 204, 204);
 }
 
 .locate p a span {
-    font-size: 29px;
+    font-size: 14px;
 }
 
 .searchbar select option {
-    font-size: 25px;
+    font-size: 14px;
     background-color: white;
     color: black;
     border-radius: 10px;
 }
 
 .searchbar select {
-    height: 72px;
+    /* height: 40px; */
     background-color: rgb(238, 233, 233);
-    font-size: 25px;
-    padding: 1 0px;
+    font-size: 10px;
+    padding: 8px;
+    border: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    width: 250px;
 }
 
 .searchbar {
     display: flex;
+    /* width: 50%; */
 }
 
-.searchbar input {
-    height: 72px;
-    position: static;   
-    width: 000px;
-    float: none;    
-    font-size: 25px;
-    line-height: 15px;
-    padding: 7px 10px 10px 0;
+.searchbar input { 
+    width: 400px;
+    font-size: 12px;
+    border: none;
+    padding: 7px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #111;
-    outline: 0;
-    box-shadow: none;
-    text-indent: 8px;
-    direction: ltr;
 }
 
 .icon {
     background-color: #febd69;
-    width: 90px;
-    font-size: 50px;
+    /* width: 50px; */
+    font-size: 11px;
+    border: none;
+    cursor: pointer;
     color: rgb(65, 64, 64);
     font-weight: 700;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 10px;
-    height: 73.333332px;
+    padding: 8px 15px;
+    /* height: 40.9px; */
 }
 
 .icon:hover {
@@ -88,7 +84,8 @@ body {
 
 .EN a {
     position: relative;
-    right: 50px;
+    right: 30px;
+    top: -15px;
     overflow-x: hidden;
 }
 .EN a:hover{
@@ -97,7 +94,7 @@ body {
 }
 
 .EN a i {
-    font-size: 20px;
+    font-size: 12px;
     color: gray;
 }
 
@@ -107,18 +104,15 @@ body {
 
 .EN a img {
     position: relative;
-    top: 11px;
+    top: 5px;
     left: 0;
     overflow: hidden;
 }
 
-.EN:hover {
-    height: 65px;
-}
 
 .EN a {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 26px;
+    font-size: 14px;
     text-decoration: none;
     font-weight: 700;
     line-height: 15px;
@@ -134,7 +128,7 @@ body {
     background-color: white;
     width: 100%;
     margin: 20px;
-    height: 200px;
+    height: 100px;
     padding: 5%;
 }
 .hello:hover{
@@ -142,24 +136,24 @@ body {
 }
 
 .signin p a i {
-    font-size: 20px;
+    font-size: 12px;
     color: gray;
 }
 
 .signin p a {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 22px;
+    font-size: 10px;
     font-weight: 400;
     text-decoration: none;
-    line-height: 28px;
+    line-height: 18px;
     color: rgb(255, 255, 255);
 }
 
 .signin p a span {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 29px;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 18px;
     color: rgb(255, 255, 255);
 }
 
@@ -172,11 +166,11 @@ body {
     background-color: white;
     padding: 25px;
     border-radius: 5px;
-    height: 700px;
-    right: 280px;
-    top: 95px;
+    height: 430px;
+    right: 80px;
+    /* top: 95px; */
     position: absolute;
-    width: 900px;
+    width: 450px;
     margin: 10px;
 }
 
@@ -192,14 +186,15 @@ body {
 .as {
     background-color: #fed229;
     color: black;
-    height: 50px;
+    height: 40px;
+    font-family: sans-serif;
     border-radius: 10px;
     box-shadow: 1px 1px 5px gray;
     text-decoration: none;
     margin: auto;
-    padding: 9px;
-    font-size: 27px;
-    width: 500px;
+    padding: 13px;
+    font-size: 12px;
+    width: 200px;
 }
 
 .as a:hover {
@@ -208,7 +203,7 @@ body {
 
 .navpop span {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 19px;
+    font-size: 10px;
     font-weight: 400;
     line-height: 2;
     color: rgb(51, 51, 51);
@@ -216,7 +211,7 @@ body {
 
 .navpop a {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 19px;
+    font-size: 10px;
     font-weight: 500;
     line-height: normal;
     color: rgba(32, 134, 197, 0.925);
@@ -252,7 +247,7 @@ body {
 
 .nav-al-column h2 {
     font-family: sans-serif;
-    font-size: 29px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 2;
     color: rgb(15, 17, 17);
@@ -260,7 +255,7 @@ body {
 
 .nav-al-column a {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 400;
     text-decoration: none;
     line-height: 2;
@@ -274,10 +269,10 @@ body {
 
 .sign p a {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 22px;
+    font-size: 10px;
     font-weight: 400;
     text-decoration: none;
-    line-height: 28px;
+    line-height: 18px;
     color: rgb(255, 255, 255);
 }
 
@@ -287,32 +282,35 @@ body {
 
 .sign p a span {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 29px;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 18px;
     color: rgb(255, 255, 255);
 }
 
 .nav-cart a {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 44px;
+    font-size: 15px;
     text-decoration: none;
     font-weight: 700;
-    line-height: 45px;
+    line-height: 11px;
     color: rgb(255, 255, 255);
 }
 .nav-cart:hover{
     border: 1px solid white;
 }
+.list i{
+    font-size: 40px;
+    display: none;
+}
 
 .navfooter {
     background-color: #37475a;
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 29px;
     font-weight: 400;
     text-align: center;
-    height: 60px;
-    padding: 15px;
+    height: 40px;
+    padding: 9px;
     align-items: center;
     line-height: 19px;
     color: rgb(255, 255, 255);
@@ -321,6 +319,7 @@ body {
 .navfooter  a {
     align-items: center;
     color: white;
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -333,25 +332,26 @@ body {
     width: 100%;
 }
 
-.navfooterverticalcolumn {
+.column {
     display: flex;
+    /* gap: 10px; */
     padding: 2%;
-    justify-content: space-evenly;
-}
-
-.cover {
-    margin: 1%;
-    display: flex;
-    width: 100%;
     justify-content: space-around;
 }
 
-.navfooterverticalcolumn h3 {
+.cover {
+    padding: 2%;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.cover h3 {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 700;
     color: rgb(221, 221, 221);
-    line-height: 45.8px;
+    line-height: 25px;
 }
 
 .navfooterverticalcolumn li {
@@ -364,11 +364,11 @@ body {
 
 .navfooterverticalcolumn li a {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 500;
     list-style: none;
     text-decoration: none;
-    line-height: 45.8px;
+    line-height: 25px;
     color: rgb(221, 221, 221);
 }
 
@@ -378,17 +378,18 @@ body {
 
 .navfooterlogo {
     display: flex;
-    gap: 5px;
+    /* gap: 5px; */
+    justify-content: space-between;
 }
 
 .navfooterlogo button {
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     border-radius: 10px;
     background-color: #232f3e;
     border: 1px solid gray;
     color: white;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .snake ul li img {
@@ -403,8 +404,8 @@ button:hover .snake img {
     display: block;
 }
 
-.usa img {
-    position: relative;
+.usa img{
+    position: relative; 
     top: 4px;
     left: -5px;
     width: 24px;
@@ -414,13 +415,13 @@ button:hover .snake img {
     display: flex;
     justify-content: space-around;
     padding: 5%;
-    gap: 70px;
+    gap: 50px;
     background-color: #131a22;
 }
 
 .footer h3 a {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 400;
     text-decoration: none;
     color: rgb(221, 221, 221);
@@ -432,7 +433,7 @@ button:hover .snake img {
 
 .footer a {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 19px;
+    font-size: 12px;
     text-decoration: none;
     font-weight: 400;
     color: rgb(153, 153, 153);
@@ -440,29 +441,30 @@ button:hover .snake img {
 
 .navfooterlink {
     background-color: #131a22;
-    /* text-align: center; */
     border-top: 1px solid rgba(128, 128, 128, 0.21);
     padding: 1%;
-    /* margin: 50px; */
 }
 
 .navfooterlink ul {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 .navfooterlink ul li {
     list-style: none;
     display: flex;
 }
+.navfooterlink ul{
+    gap: 20px;
+}
 
-.navfooterlink a {
+.navfooterlink li a {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 13px;
     text-decoration: none;
     font-weight: 400;
-    line-height: 60px;
+    line-height: 25px;
     color: rgb(221, 221, 221);
 }
 
@@ -472,10 +474,10 @@ button:hover .snake img {
 
 .navfooterlink p {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 13px;
     text-align: center;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 14px;
     color: rgb(221, 221, 221);
 }
 
@@ -488,11 +490,15 @@ button:hover .snake img {
     .footer {
         width: 100%;
         font-size: 1rem;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .EN a img{
         overflow: hidden;
 
+    }
+    .header{
+        width: 100%;
+        position: static;
     }
 
     .foot {
@@ -503,11 +509,15 @@ button:hover .snake img {
         /* padding: 0; */
     }
 
-    .navfooterverticalcolumn {
+    .navfooterverticalcolumn h3{
         width: 100%;
         font-size: 10px;
         /* flex-direction: column; */
+        font-size: 15px;
         position: static;
+    }
+    .navfooterverticalcolumn li a{
+        font-size: 10px;
     }
 
     .cover {
@@ -540,6 +550,12 @@ button:hover .snake img {
         line-height: 25px;
         gap: 50px;
     }
+    .searchbar input{
+        width: 300px;
+    }
+    .searchbar select{
+        width: 100px;
+    }
 } 
 @media(max-width:1300px) {
     .navfooter {
@@ -561,6 +577,44 @@ button:hover .snake img {
         font-size: 20px;
         /* position: static; */
         /* flex-direction: column; */
+    }
+}
+@media(max-width:1200px){
+    .navfooterverticalcolumn h3{
+        width: 100%;
+        font-size: 10px;
+        font-size: 15px;
+        position: static;
+    }
+    .navfooterverticalcolumn li a{
+        font-size: 10px;
+    }
+    .searchbar input{
+        width: 100%;
+    }
+    .list i{
+        display: block;
+    }
+    .EN{
+        display: none;
+    }
+    .signin{
+        display: none;
+    }
+    .sign{
+        display: none;
+    }
+    .nav-cart{
+        display: none;
+    }
+    .locate{
+        display: none;
+    }
+    .footer h3{
+        line-height: 12px;
+    }
+    .footer a{
+        line-height: 12px;
     }
 }
 
@@ -603,6 +657,12 @@ button:hover .snake img {
         line-height: 25px;
         gap: 1  90px;
     }
+    .footer h3{
+        line-height: 9px;
+    }
+    .footer a{
+        line-height: px;
+    }
 
     .header {
         width: 100%;
@@ -618,6 +678,14 @@ button:hover .snake img {
     .navfooterlogo a{
         width: 200px;
     }
+    .footer h3{
+        font-size: 13px;
+        line-height: 8px;
+    }
+    .footer a{
+        font-size: 10px;
+        line-height: 8px;
+    }
     .navfooterlogo button{
         width: 150px;
         font-size: 15px;
@@ -627,17 +695,15 @@ button:hover .snake img {
         width: 100%;
         position: static;
     }
+    .searchbar input{
+        width: 200px;
+    }
 
     .foot {
         width: 100%;
         position: static;
     }
-    .footer h3 a{
-        font-size: 11px;
-    }
-    .footer a{
-        font-size: 8px;
-    }
+    
     .cover h3{
         font-size: 18px;
         line-height: 25px;
@@ -658,6 +724,7 @@ button:hover .snake img {
     .footer {
         width: 100%;
         position: static;
+        flex-direction: column;
     }
 
     .foot {
@@ -665,9 +732,22 @@ button:hover .snake img {
         position: static;
         ;
     }
+    .footer h3{
+        font-size: 15px;
+        line-height: 8px;
+    }
+    .footer a{
+        font-size: 13px;
+        line-height: 10px;
+    }
 
     .navfooterverticalcolumn {
         width: 100%;
+        position: static;
+    }
+    .header{
+        width: 100%;
+        /* flex-direction: column; */
         position: static;
     }
 
@@ -734,13 +814,26 @@ button:hover .snake img {
         position: static;
         flex-direction: column;
     }
+    .column{
+        display: block;
+        width: 100%;
+        /* flex-direction: column; */
+        position: static;
+    }
 }
 
-@media(max-width:400px) {
+@media(max-width:500px) {
     .navfooter {
         width: 100%;
         position: static;
         flex-direction: column;
+    }
+    .searchbar input{
+        width: 100px;
+    }
+    
+    .header a img{
+        display: none;
     }
 
     .footer {
@@ -753,5 +846,8 @@ button:hover .snake img {
         width: 100%;
         position: static;
         flex-direction: column;
+    }
+    .mul a img{
+        display: block;
     }
 }
