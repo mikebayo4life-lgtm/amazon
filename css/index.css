@@ -7,14 +7,14 @@
 
 .header {
     background-color: #151d28;
-    padding: 10px 20px;  
+    padding: 10px 20px;
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     color: white;
 }
 
-.mul a img{
+.mul a img {
     display: none;
     border-radius: 10px;
 }
@@ -55,7 +55,7 @@
     /* width: 50%; */
 }
 
-.searchbar input { 
+.searchbar input {
     width: 400px;
     font-size: 12px;
     border: none;
@@ -88,7 +88,8 @@
     top: -15px;
     overflow-x: hidden;
 }
-.EN a:hover{
+
+.EN a:hover {
     border: 1px solid white;
     padding: 0.5rem;
 }
@@ -131,7 +132,8 @@
     height: 100px;
     padding: 5%;
 }
-.hello:hover{
+
+.hello:hover {
     border: 1px solid white;
 }
 
@@ -167,15 +169,16 @@
     padding: 25px;
     border-radius: 5px;
     height: 430px;
-    right: 80px;
+    right: 190px;
     /* top: 95px; */
-    position: absolute;
+    position: relative;
     width: 450px;
     margin: 10px;
 }
 
 .none {
     display: none;
+    position: absolute;
 }
 
 
@@ -296,13 +299,132 @@
     line-height: 11px;
     color: rgb(255, 255, 255);
 }
-.nav-cart:hover{
+
+.nav-cart:hover {
     border: 1px solid white;
 }
-.list i{
+
+.list i {
     font-size: 40px;
     display: none;
 }
+
+.nav-main {
+    background-color: #232f3e;
+    max-height: 51px;
+    padding: 2px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-left i {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 12px;
+    top: 3px; 
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.nav-left:hover{
+    border: 2px solid white;
+    padding: 1px;
+}
+
+.nav-left span {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 15px;
+    position: relative;
+    top: -2px;
+    font-weight: 400;
+    line-height: 12px;
+    color: rgb(255, 255, 255);
+}
+
+
+.nav-main a {
+    text-decoration: none;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 12px;
+    color: rgb(254, 254, 254);
+}
+
+.hell h1{
+    background-color: #151d28;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 11px;
+    /* padding: 5rem; */
+    font-weight: 700;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.all h3 {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 1rem;
+    color: rgb(17, 17, 17);
+}
+
+.all {
+    background-color: white;
+    /* display: none; */
+    position: absolute;
+}
+
+.all a {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1rem;
+    line-height: 16px;
+    text-decoration: none;
+    display: block;
+    gap: 50px;
+    color: rgb(17, 17, 17);
+}
+
+.digital a i{
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    line-height: 16px;
+}
+.all a:hover{
+    background-color: rgba(211, 211, 211, 0.356);
+    width: 100%;
+    height: 50px;
+    padding: 4rem;
+}
+
+.nav-left:hover .all {
+    display: block;
+}
+
+.nav-pin {
+    text-align: right;
+    padding-left: 2px;
+    position: relative;
+    left: 270px;
+}
+
+.nav-pin a:hover {
+    border: 2px solid white;
+    padding: 1px;
+}
+
+.nav-main a:hover {
+    border: 2px solid white;
+    padding: 1px;
+}
+
 
 .navfooter {
     background-color: #37475a;
@@ -316,7 +438,7 @@
     color: rgb(255, 255, 255);
 }
 
-.navfooter  a {
+.navfooter a {
     align-items: center;
     color: white;
     font-size: 15px;
@@ -362,12 +484,17 @@
     text-decoration: underline;
 }
 
+.cover ul li a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
 .navfooterverticalcolumn li a {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
-    list-style: none;
-    text-decoration: none;
+    /* list-style: none; */
+    /* text-decoration: none; */
     line-height: 25px;
     color: rgb(221, 221, 221);
 }
@@ -404,8 +531,8 @@ button:hover .snake img {
     display: block;
 }
 
-.usa img{
-    position: relative; 
+.usa img {
+    position: relative;
     top: 4px;
     left: -5px;
     width: 24px;
@@ -423,6 +550,7 @@ button:hover .snake img {
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 12px;
     font-weight: 400;
+    line-height: 11px;
     text-decoration: none;
     color: rgb(221, 221, 221);
 }
@@ -436,6 +564,7 @@ button:hover .snake img {
     font-size: 12px;
     text-decoration: none;
     font-weight: 400;
+    line-height: 11px;
     color: rgb(153, 153, 153);
 }
 
@@ -455,7 +584,8 @@ button:hover .snake img {
     list-style: none;
     display: flex;
 }
-.navfooterlink ul{
+
+.navfooterlink ul {
     gap: 20px;
 }
 
@@ -492,11 +622,13 @@ button:hover .snake img {
         font-size: 1rem;
         /* flex-direction: column; */
     }
-    .EN a img{
+
+    .EN a img {
         overflow: hidden;
 
     }
-    .header{
+
+    .header {
         width: 100%;
         position: static;
     }
@@ -509,14 +641,15 @@ button:hover .snake img {
         /* padding: 0; */
     }
 
-    .navfooterverticalcolumn h3{
+    .navfooterverticalcolumn h3 {
         width: 100%;
         font-size: 10px;
         /* flex-direction: column; */
         font-size: 15px;
         position: static;
     }
-    .navfooterverticalcolumn li a{
+
+    .navfooterverticalcolumn li a {
         font-size: 10px;
     }
 
@@ -534,29 +667,36 @@ button:hover .snake img {
         /* flex-direction: column; */
     }
 }
-@media(max-width:1400px){
-    .footer h3 a{
+
+@media(max-width:1400px) {
+    .footer h3 a {
         font-size: 15px;
     }
-    .footer a{
+
+    .footer a {
         font-size: 10px;
     }
-    .cover h3{
+
+    .cover h3 {
         font-size: 20px;
         line-height: 25px;
     }
-    .cover ul li a{
+
+    .cover ul li a {
         font-size: 18px;
         line-height: 25px;
         gap: 50px;
     }
-    .searchbar input{
+
+    .searchbar input {
         width: 300px;
     }
-    .searchbar select{
+
+    .searchbar select {
         width: 100px;
     }
-} 
+}
+
 @media(max-width:1300px) {
     .navfooter {
         width: 100%;
@@ -579,41 +719,52 @@ button:hover .snake img {
         /* flex-direction: column; */
     }
 }
-@media(max-width:1200px){
-    .navfooterverticalcolumn h3{
+
+@media(max-width:1200px) {
+    .navfooterverticalcolumn h3 {
         width: 100%;
         font-size: 10px;
         font-size: 15px;
         position: static;
     }
-    .navfooterverticalcolumn li a{
+
+    .navfooterverticalcolumn li a {
         font-size: 10px;
     }
-    .searchbar input{
+
+    .searchbar input {
         width: 100%;
     }
-    .list i{
+
+    .list i {
         display: block;
     }
-    .EN{
+
+    .EN {
         display: none;
     }
-    .signin{
+
+    .signin {
         display: none;
     }
-    .sign{
+
+    .sign {
         display: none;
     }
-    .nav-cart{
+
+    .nav-cart {
         display: none;
     }
-    .locate{
+
+    .locate {
         display: none;
     }
-    .footer h3{
+
+    .footer h3 {
         line-height: 12px;
     }
-    .footer a{
+
+    .footer a {
         line-height: 12px;
     }
 }
@@ -623,13 +774,16 @@ button:hover .snake img {
         width: 100%;
         position: static;
     }
-    .navfooterverticalcolumn h3{
+
+    .navfooterverticalcolumn h3 {
         font-size: 15px;
     }
-    .navfooterverticalcolumn li a{
+
+    .navfooterverticalcolumn li a {
         font-size: 15px;
     }
-    .navfooterlogo a{
+
+    .navfooterlogo a {
         width: 200px;
     }
 
@@ -642,25 +796,31 @@ button:hover .snake img {
         width: 100%;
         position: static;
     }
-    .footer h3 a{
+
+    .footer h3 a {
         font-size: 11px;
     }
-    .footer a{
+
+    .footer a {
         font-size: 8px;
     }
-    .cover h3{
+
+    .cover h3 {
         font-size: 18px;
         line-height: 25px;
     }
-    .cover ul li a{
+
+    .cover ul li a {
         font-size: 15px;
         line-height: 25px;
-        gap: 1  90px;
+        gap: 1 90px;
     }
-    .footer h3{
+
+    .footer h3 {
         line-height: 9px;
     }
-    .footer a{
+
+    .footer a {
         line-height: px;
     }
 
@@ -668,25 +828,31 @@ button:hover .snake img {
         width: 100%;
     }
 }
-@media(max-width:900px){
-     .navfooterverticalcolumn h3{
+
+@media(max-width:900px) {
+    .navfooterverticalcolumn h3 {
         font-size: 15px;
     }
-    .navfooterverticalcolumn li a{
+
+    .navfooterverticalcolumn li a {
         font-size: 15px;
     }
-    .navfooterlogo a{
+
+    .navfooterlogo a {
         width: 200px;
     }
-    .footer h3{
+
+    .footer h3 {
         font-size: 13px;
         line-height: 8px;
     }
-    .footer a{
+
+    .footer a {
         font-size: 10px;
         line-height: 8px;
     }
-    .navfooterlogo button{
+
+    .navfooterlogo button {
         width: 150px;
         font-size: 15px;
     }
@@ -695,7 +861,8 @@ button:hover .snake img {
         width: 100%;
         position: static;
     }
-    .searchbar input{
+
+    .searchbar input {
         width: 200px;
     }
 
@@ -703,12 +870,13 @@ button:hover .snake img {
         width: 100%;
         position: static;
     }
-    
-    .cover h3{
+
+    .cover h3 {
         font-size: 18px;
         line-height: 25px;
     }
-    .cover ul li a{
+
+    .cover ul li a {
         font-size: 15px;
         line-height: 25px;
         gap: 50px;
@@ -732,11 +900,13 @@ button:hover .snake img {
         position: static;
         ;
     }
-    .footer h3{
+
+    .footer h3 {
         font-size: 15px;
         line-height: 8px;
     }
-    .footer a{
+
+    .footer a {
         font-size: 13px;
         line-height: 10px;
     }
@@ -745,7 +915,8 @@ button:hover .snake img {
         width: 100%;
         position: static;
     }
-    .header{
+
+    .header {
         width: 100%;
         /* flex-direction: column; */
         position: static;
@@ -814,7 +985,8 @@ button:hover .snake img {
         position: static;
         flex-direction: column;
     }
-    .column{
+
+    .column {
         display: block;
         width: 100%;
         /* flex-direction: column; */
@@ -828,11 +1000,12 @@ button:hover .snake img {
         position: static;
         flex-direction: column;
     }
-    .searchbar input{
+
+    .searchbar input {
         width: 100px;
     }
-    
-    .header a img{
+
+    .header a img {
         display: none;
     }
 
@@ -847,7 +1020,16 @@ button:hover .snake img {
         position: static;
         flex-direction: column;
     }
-    .mul a img{
+
+    .cover h3 {
+        line-height: 19px;
+    }
+
+    .cover ul li a {
+        line-height: 15px;
+    }
+
+    .mul a img {
         display: block;
     }
 }
