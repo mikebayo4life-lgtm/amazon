@@ -60,6 +60,7 @@
     font-size: 12px;
     border: none;
     padding: 7px;
+    height: 28.8px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #111;
 }
@@ -896,9 +897,9 @@ button:hover .snake img {
         width: 100%;
     }
 
-    .list i {
+    /* .list i {
         display: block;
-    }
+    } */
 
     .EN {
         display: none;

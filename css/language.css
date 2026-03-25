@@ -1303,7 +1303,8 @@
             position: static;
             flex-direction: column;
         }
-        .nav-main{
+
+        .nav-main {
             position: static;
             width: 100%;
         }
@@ -1327,9 +1328,9 @@
             width: 100px;
         }
 
-        /* .header a img {
+        .header a img {
             display: none;
-        } */
+        }
 
         .footer {
             width: 100%;
@@ -1351,15 +1352,16 @@
             line-height: 15px;
         }
 
-        /* .mul a img {
+        .mul a img {
             display: block;
-        } */
-        .cus{
+        }
+        .cus {
             display: none;
         }
     }
-    @media(max-width:400px){
-        .pri{
+
+    @media(max-width:400px) {
+        .pri {
             display: none;
         }
     }
