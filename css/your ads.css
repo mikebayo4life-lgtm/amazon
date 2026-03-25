@@ -128,64 +128,71 @@
 }
 
 .snake {
-   background-color: #ffffff;
-   position: relative;
-   right: 40px;
-   display: none;
-   padding: 0.7rem;
-   border-radius: 10px;
-   width: 200px;
+    background-color: #ffffff;
+    position: relative;
+    right: 40px;
+    display: none;
+    padding: 0.7rem;
+    border-radius: 10px;
+    width: 200px;
 }
 
-.snake p{
+.snake p {
     color: rgba(0, 0, 0, 0.728);
     font-size: 14px;
     font-family: sans-serif;
 }
-.snake input{
+
+.snake input {
     margin-top: 0.3rem;
     position: relative;
-    top: 3px; 
+    top: 3px;
 }
-.line{
+
+.line {
     margin-top: 0.8rem;
     border-bottom: 1px solid rgba(128, 128, 128, 0.338);
 }
-.chech{
+
+.chech {
     margin-top: 0.5rem;
 }
+
 .alk {
     color: rgba(0, 102, 255, 0.836);
     font-size: 14px;
     font-family: sans-serif;
 }
 
-.alk :hover{
+.alk :hover {
     text-decoration: underline;
     color: rgba(6, 19, 39, 0.836);
 }
 
-.als{
+.als {
     margin-top: 0.2rem;
     color: rgba(0, 102, 255, 0.836);
     font-size: 14px;
     font-family: sans-serif;
 }
-.als:hover{
-     text-decoration: underline;
+
+.als:hover {
+    text-decoration: underline;
     text-decoration-color: #febd69;
 }
 
-.snake label{
+.snake label {
     color: #111111b7;
     font-size: 14px;
     line-height: 30px;
     font-family: sans-serif;
 }
-.snake label:hover{
+
+.snake label:hover {
     border-bottom: 1px solid rgba(245, 97, 43, 0.895);
     color: rgba(245, 97, 43, 0.895);
 }
+
 .hello:hover {
     border: 1px solid white;
 }
@@ -418,11 +425,12 @@
     line-height: 25px;
     color: rgb(255, 255, 255);
 }
-.nav-left:hover .all{
+
+.nav-left:hover .all {
     display: block;
 }
 
-.digital a:hover{
+.digital a:hover {
     background-color: rgba(211, 211, 211, 0.336);
 }
 
@@ -431,7 +439,7 @@
     top: 10px;
     overflow-y: scroll;
     height: 620px;
-    width: 400px;  
+    width: 400px;
 }
 
 .all h3 {
@@ -548,10 +556,11 @@
     color: lightgray;
 }
 
-.com a i{
+.com a i {
     position: relative;
     right: 30px;
 }
+
 .all a:hover {
     background-color: rgba(211, 211, 211, 0.452);
     width: 100%;
@@ -576,6 +585,177 @@
     padding: 1px;
 }
 
+.aheadercontent {
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headercontent {
+    padding: 5%;
+}
+
+.headercontent i {
+    font-size: 12px;
+}
+
+.headercontent a {
+    /* padding: 10px; */
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 20px;
+    color: rgb(33, 98, 161);
+}
+
+.headercontent a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.headercontent h1 {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 1rem;
+    line-height: 36px;
+    color: rgb(15, 17, 17);
+}
+
+.headercontent p {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 24px;
+    color: rgb(86, 89, 89);
+}
+
+.a-box-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 900px;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 2rem;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+}
+
+.container p {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(15, 17, 17);
+}
+
+.container h2 {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 1rem;
+    color: rgb(15, 17, 17);
+}
+
+.container input {
+    margin-top: 1rem;
+    position: relative;
+    top: 2px;
+}
+
+.container label {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(15, 17, 17);
+}
+
+.dike {
+    margin-top: 0.5rem;
+    background-color: #fed229;
+    border: none;
+    width: 140px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.dike:hover {
+    background-color: #f1ca2d;
+}
+
+.dike a {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 19px;
+    color: black;
+}
+
+.if h3 {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgb(15, 17, 17);
+}
+
+.if ul {
+    padding: 15px;
+}
+
+.if ul li {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(15, 17, 17);
+}
+
+.in p a {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(33, 98, 161);
+}
+
+.in a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.ini h2 {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgb(15, 17, 17);
+}
+
+.ini a {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(33, 98, 161);
+}
+
+.ini a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
 
 .navfooter {
     background-color: #37475a;
@@ -773,7 +953,8 @@ button:hover .snake img {
         font-size: 1rem;
         /* flex-direction: column; */
     }
-    .nav-main{
+
+    .nav-main {
         position: static;
         width: 100%;
     }
@@ -837,6 +1018,10 @@ button:hover .snake img {
         line-height: 25px;
     }
 
+    .nav-main {
+        display: none;
+    }
+
     .cover ul li a {
         font-size: 18px;
         line-height: 25px;
@@ -866,11 +1051,13 @@ button:hover .snake img {
         position: static;
         /* flex-direction: column; */
     }
+
     .nav-main {
         font-size: 12px;
         /* padding: 0; */
     }
-    .nav-pin{
+
+    .nav-pin {
         position: relative;
         left: 190px;
     }
@@ -1074,6 +1261,12 @@ button:hover .snake img {
         line-height: 10px;
     }
 
+    .aheadercontent {
+        position: static;
+        /* flex-direction: column; */
+        width: 100%;
+    }
+
     .navfooterverticalcolumn {
         width: 100%;
         position: static;
@@ -1129,6 +1322,18 @@ button:hover .snake img {
     .footer {
         width: 100%;
         position: static;
+    }
+
+    .aheadercontent {
+        position: static;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .init {
+        flex-direction: column;
+        position: static;
+        width: 100%;
     }
 
     .navfooterverticalcolumn {
