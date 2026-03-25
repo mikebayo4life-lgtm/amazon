@@ -1,0 +1,1365 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    .header {
+        background-color: #151d28;
+        padding: 10px 20px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
+
+    .mul a img {
+        display: none;
+        border-radius: 10px;
+    }
+
+    .locate p a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 10px;
+        margin: 20px;
+        font-weight: 400;
+        line-height: 15px;
+        text-decoration: none;
+        color: rgb(204, 204, 204);
+    }
+
+    .locate p a span {
+        font-size: 14px;
+    }
+
+    .searchbar select option {
+        font-size: 14px;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+    }
+
+    .searchbar select {
+        /* height: 40px; */
+        background-color: rgb(238, 233, 233);
+        font-size: 10px;
+        padding: 8px;
+        border: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .searchbar {
+        display: flex;
+        /* width: 50%; */
+    }
+
+    .searchbar input {
+        width: 200px;
+        font-size: 12px;
+        border: none;
+        padding: 7px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #111;
+    }
+
+    .icon {
+        background-color: #febd69;
+        /* width: 50px; */
+        font-size: 11px;
+        border: none;
+        cursor: pointer;
+        color: rgb(65, 64, 64);
+        font-weight: 700;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 8px 15px;
+        /* height: 40.9px; */
+    }
+
+    .icon:hover {
+        background-color: #febd69ef;
+    }
+
+    .EN a {
+        position: relative;
+        right: 30px;
+        top: -15px;
+        overflow-x: hidden;
+    }
+
+    .EN a:hover {
+        border: 1px solid white;
+        padding: 0.5rem;
+    }
+
+    .EN a i {
+        font-size: 12px;
+        color: gray;
+    }
+
+    .NE {
+        position: absolute;
+    }
+
+    .EN a img {
+        position: relative;
+        top: 5px;
+        left: 0;
+        overflow: hidden;
+    }
+
+
+    .EN a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 15px;
+        color: rgb(255, 255, 255);
+    }
+
+    .EN:hover .snake {
+        display: block;
+    }
+
+    .snake {
+        background-color: #ffffff;
+        position: relative;
+        right: 40px;
+        display: none;
+        box-shadow: 1px 1px 15px gray;
+        padding: 0.7rem;
+        border-radius: 10px;
+        width: 200px;
+    }
+
+    .snake p {
+        color: rgba(0, 0, 0, 0.728);
+        font-size: 14px;
+        font-family: sans-serif;
+    }
+
+    .snake input {
+        margin-top: 0.3rem;
+        position: relative;
+        top: 3px;
+    }
+
+    .line {
+        margin-top: 0.8rem;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.338);
+    }
+
+    .chech {
+        margin-top: 0.5rem;
+    }
+
+    .alk {
+        color: rgba(0, 102, 255, 0.836);
+        font-size: 14px;
+        font-family: sans-serif;
+    }
+
+    .alk :hover {
+        text-decoration: underline;
+        color: rgba(6, 19, 39, 0.836);
+    }
+
+    .als {
+        margin-top: 0.2rem;
+        color: rgba(0, 102, 255, 0.836);
+        font-size: 14px;
+        font-family: sans-serif;
+    }
+
+    .als:hover {
+        text-decoration: underline;
+        text-decoration-color: #febd69;
+    }
+
+    .snake label {
+        color: #111111b7;
+        font-size: 14px;
+        line-height: 30px;
+        font-family: sans-serif;
+    }
+
+    .snake label:hover {
+        border-bottom: 1px solid rgba(245, 97, 43, 0.895);
+        color: rgba(245, 97, 43, 0.895);
+    }
+
+    .hello:hover {
+        border: 1px solid white;
+    }
+
+    .signin p a i {
+        font-size: 12px;
+        color: gray;
+    }
+
+    .signin p a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        text-decoration: none;
+        line-height: 18px;
+        color: rgb(255, 255, 255);
+    }
+
+    .signin p a span {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-al-sign {
+        text-align: center;
+        border-bottom: 1px solid rgba(211, 211, 211, 0.555);
+    }
+
+    .nav {
+        background-color: white;
+        padding: 25px;
+        border-radius: 5px;
+        height: 430px;
+        box-shadow: 1px 1px 15px gray;
+        right: 190px;
+        /* top: 95px; */
+        position: relative;
+        width: 450px;
+        margin: 10px;
+    }
+
+    .none {
+        display: none;
+        position: absolute;
+    }
+
+
+    .signin:hover .none {
+        display: block;
+    }
+
+    .as {
+        background-color: #fed229;
+        color: black;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px gray;
+        text-decoration: none;
+        margin: auto;
+        padding: 13px;
+        font-size: 12px;
+        width: 200px;
+    }
+
+    .as a:hover {
+        text-decoration: underline;
+    }
+
+    .navpop span {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 2;
+        color: rgb(51, 51, 51);
+    }
+
+    .navpop a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: normal;
+        color: rgba(32, 134, 197, 0.925);
+    }
+
+    .navpop a:hover {
+        color: rgb(199, 81, 31);
+    }
+
+    .as a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .nav p {
+        color: black;
+    }
+
+    .nav-al {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-al-column {
+        margin: 10px;
+    }
+
+    .nav-al-column-line {
+        border-left: 1px solid rgba(128, 128, 128, 0.416);
+        margin: 10px;
+    }
+
+    .nav-al-column h2 {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 2;
+        color: rgb(15, 17, 17);
+    }
+
+    .nav-al-column a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-decoration: none;
+        line-height: 2;
+        color: rgb(51, 51, 51);
+    }
+
+    .nav-al-column a:hover {
+        color: rgb(199, 81, 31);
+        text-decoration: underline;
+    }
+
+    .sign p a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        text-decoration: none;
+        line-height: 18px;
+        color: rgb(255, 255, 255);
+    }
+
+    .sign:hover {
+        border: 1px solid white;
+    }
+
+    .sign p a span {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-cart a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 11px;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-cart:hover {
+        border: 1px solid white;
+    }
+
+    .list i {
+        font-size: 40px;
+        display: none;
+    }
+
+    .nav-main {
+        background-color: #232f3e;
+        max-height: 51px;
+        padding: 2px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .nav-left i {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 12px;
+        top: 3px;
+        position: relative;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-left:hover {
+        border: 2px solid white;
+        padding: 1px;
+    }
+
+    .nav-left p {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 15px;
+        position: relative;
+        top: -2px;
+        font-weight: 400;
+        line-height: 12px;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-main {
+        padding: 0.5rem;
+    }
+
+    .nav-main a {
+        text-decoration: none;
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 12px;
+        color: rgb(254, 254, 254);
+    }
+
+    .hell {
+        background-color: #324969;
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 11px;
+        padding: 1rem;
+        font-weight: 700;
+        line-height: 25px;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-left:hover .all {
+        display: block;
+    }
+
+    .digital a:hover {
+        background-color: rgba(211, 211, 211, 0.336);
+    }
+
+    .all {
+        position: relative;
+        top: 10px;
+        overflow-y: scroll;
+        height: 620px;
+        width: 400px;
+    }
+
+    .all h3 {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 36px;
+        /* padding: 1rem; */
+        color: rgb(17, 17, 17);
+    }
+
+    .all {
+        background-color: white;
+        display: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+
+    .all a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        /* padding: 1rem; */
+        line-height: 36px;
+        text-decoration: none;
+        /* display: block; */
+        color: rgb(17, 17, 17);
+    }
+
+    .digital {
+        gap: 50px;
+        padding: 1rem;
+        display: block;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.237);
+    }
+
+
+    .pr:hover {
+        color: #111;
+        background-color: rgba(128, 128, 128, 0.199);
+    }
+
+    .pr:hover a i {
+        color: #111;
+    }
+
+    .pr a i {
+        position: relative;
+        left: 250px;
+        font-size: 16px;
+        color: lightgray;
+    }
+
+    .amz:hover {
+        background-color: rgba(128, 128, 128, 0.199);
+    }
+
+    .amz:hover a i {
+        color: #111;
+    }
+
+    .amz a i {
+        position: relative;
+        font-weight: 600;
+        left: 233px;
+        font-size: 16px;
+        color: lightgray;
+    }
+
+    .kind:hover a i {
+        color: #111;
+    }
+
+    .kind:hover {
+        background-color: rgba(128, 128, 128, 0.199);
+    }
+
+    .kind a i {
+        position: relative;
+        left: 155px;
+        font-size: 16px;
+        color: lightgray;
+    }
+
+    .app:hover {
+        background-color: rgba(128, 128, 128, 0.199);
+    }
+
+    .app:hover a i {
+        color: #111;
+    }
+
+    .app a i {
+        position: relative;
+        left: 212px;
+        font-size: 16px;
+        color: lightgray;
+    }
+
+    .el:hover {
+        background-color: rgba(128, 128, 128, 0.199);
+    }
+
+    .el:hover a i {
+        color: #111;
+    }
+
+    .el a i {
+        position: relative;
+        font-weight: 600;
+        left: 233px;
+        font-size: 16px;
+        color: lightgray;
+    }
+
+    .com a i {
+        position: relative;
+        right: 30px;
+    }
+
+    .all a:hover {
+        background-color: rgba(211, 211, 211, 0.452);
+        width: 100%;
+        height: 50px;
+        /* padding: 4rem; */
+    }
+
+    .nav-pin {
+        text-align: right;
+        padding-left: 2px;
+        position: relative;
+        left: 270px;
+    }
+
+    .nav-pin a:hover {
+        border: 2px solid white;
+        padding: 1px;
+    }
+
+    .nav-main a:hover {
+        border: 2px solid white;
+        padding: 1px;
+    }
+
+    .language {
+        padding: 3rem;
+    }
+
+    .language h1 {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .select {
+        margin-top: 0.8rem;
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .eng {
+        margin-top: 0.8rem;
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .lang {
+        margin-top: 20px;
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        color: rgb(15, 17, 17);
+    }
+
+    .language input {
+        position: relative;
+        top: 2px;
+    }
+
+    .lines {
+        margin-top: 2rem;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.447);
+    }
+
+    .langs h1 {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 2rem;
+        line-height: 24px;
+    }
+
+    .lang select {
+        border-radius: 20px;
+        height: 30px;
+        margin-top: 2rem;
+        padding: 5px;
+    }
+
+    .bem {
+        margin-top: 2rem;
+        width: 70px;
+        background-color: white;
+        border: 1px solid rgba(128, 128, 128, 0.639);
+        height: 30px;
+        border-radius: 20px;
+    }
+
+    .bem:hover {
+        background-color: rgb(227, 234, 248);
+    }
+
+    .bem a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 0.8rem;
+        text-decoration: none;
+        color: rgb(15, 17, 17);
+    }
+
+    .ben {
+        background-color: #fed11e;
+        width: 120px;
+        height: 30px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .ben:hover {
+        background-color: #ecc423;
+    }
+
+    .ben a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 400;
+        line-height: 19px;
+        color: rgba(15, 17, 17);
+    }
+
+    .pef {
+        text-align: center;
+        border-top: 1px solid rgba(128, 128, 128, 0.297);
+        margin-bottom: 2rem;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.297);
+    }
+
+    .pef h1 {
+        margin-top: 2rem;
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 0.5rem;
+        color: rgb(0, 0, 0);
+    }
+
+    .as {
+        border: none;
+    }
+
+    .navpop {
+        margin-bottom: 1rem;
+    }
+
+    .as a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(15, 17, 17);
+    }
+
+    .navfooter {
+        background-color: #37475a;
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-weight: 400;
+        text-align: center;
+        height: 40px;
+        padding: 9px;
+        align-items: center;
+        line-height: 19px;
+        color: rgb(255, 255, 255);
+    }
+
+    .navfooter a {
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .navfooter:hover {
+        background-color: #37475ae4;
+    }
+
+    .foot {
+        background-color: #232f3e;
+        width: 100%;
+    }
+
+    .column {
+        display: flex;
+        /* gap: 10px; */
+        padding: 2%;
+        justify-content: space-around;
+    }
+
+    .cover {
+        padding: 2%;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .cover h3 {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: rgb(221, 221, 221);
+        line-height: 25px;
+    }
+
+    .navfooterverticalcolumn li {
+        list-style: none;
+    }
+
+    .navfooterverticalcolumn li a:hover {
+        text-decoration: underline;
+    }
+
+    .cover ul li a {
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .navfooterverticalcolumn li a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        /* list-style: none; */
+        /* text-decoration: none; */
+        line-height: 25px;
+        color: rgb(221, 221, 221);
+    }
+
+    .navfooterline {
+        border-top: 1px solid rgba(128, 128, 128, 0.409);
+    }
+
+    .navfooterlogo {
+        display: flex;
+        /* gap: 5px; */
+        justify-content: space-between;
+    }
+
+    .navfooterlogo button {
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #232f3e;
+        border: 1px solid gray;
+        color: white;
+        font-size: 14px;
+    }
+
+    .snake ul li img {
+        display: none;
+        background-color: white;
+        width: 100%;
+        height: 200px;
+        padding: 30px;
+    }
+
+    button:hover .snake img {
+        display: block;
+    }
+
+    .usa img {
+        position: relative;
+        top: 4px;
+        left: -5px;
+        width: 24px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 5%;
+        gap: 50px;
+        background-color: #131a22;
+    }
+
+    .footer h3 a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 11px;
+        text-decoration: none;
+        color: rgb(221, 221, 221);
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+    .footer a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: 400;
+        line-height: 11px;
+        color: rgb(153, 153, 153);
+    }
+
+    .navfooterlink {
+        background-color: #131a22;
+        border-top: 1px solid rgba(128, 128, 128, 0.21);
+        padding: 1%;
+    }
+
+    .navfooterlink ul {
+        display: flex;
+        justify-content: center;
+        /* gap: 30px; */
+    }
+
+    .navfooterlink ul li {
+        list-style: none;
+        display: flex;
+    }
+
+    .navfooterlink ul {
+        gap: 20px;
+    }
+
+    .navfooterlink li a {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 13px;
+        text-decoration: none;
+        font-weight: 400;
+        line-height: 25px;
+        color: rgb(221, 221, 221);
+    }
+
+    .navfooterlink li a:hover {
+        text-decoration: underline;
+    }
+
+    .navfooterlink p {
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 13px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 14px;
+        color: rgb(221, 221, 221);
+    }
+
+    @media(max-width:1500px) {
+        .navfooter {
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .footer {
+            width: 100%;
+            font-size: 1rem;
+            /* flex-direction: column; */
+        }
+
+        .nav-main {
+            position: static;
+            width: 100%;
+        }
+
+        .EN a img {
+            overflow: hidden;
+
+        }
+
+        .header {
+            width: 100%;
+            position: static;
+        }
+
+        .foot {
+            font-size: 10px;
+            width: 100%;
+            position: static;
+            /* margin: 0; */
+            /* padding: 0; */
+        }
+
+        .navfooterverticalcolumn h3 {
+            width: 100%;
+            font-size: 10px;
+            /* flex-direction: column; */
+            font-size: 15px;
+            position: static;
+        }
+
+        .navfooterverticalcolumn li a {
+            font-size: 10px;
+        }
+
+        .cover {
+            width: 100%;
+            font-size: 10px;
+            position: static;
+            /* flex-direction: column; */
+            /* display: block; */
+        }
+
+        .header {
+            width: 100%;
+            position: static;
+            /* flex-direction: column; */
+        }
+    }
+
+    @media(max-width:1400px) {
+        .footer h3 a {
+            font-size: 15px;
+        }
+
+        .footer a {
+            font-size: 10px;
+        }
+
+        .cover h3 {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        .cover ul li a {
+            font-size: 18px;
+            line-height: 25px;
+            gap: 50px;
+        }
+
+        .searchbar input {
+            width: 300px;
+        }
+
+        .searchbar select {
+            width: 100px;
+        }
+    }
+
+    @media(max-width:1300px) {
+        .navfooter {
+            width: 100%;
+            position: static;
+            font-size: 20px;
+            /* flex-direction: column; */
+        }
+
+        .footer {
+            width: 100%;
+            font-size: 20px;
+            position: static;
+            /* flex-direction: column; */
+        }
+
+        .nav-main {
+            font-size: 12px;
+            /* padding: 0; */
+        }
+
+        .nav-pin {
+            position: relative;
+            left: 190px;
+        }
+
+        .foot {
+            width: 100%;
+            font-size: 20px;
+            /* position: static; */
+            /* flex-direction: column; */
+        }
+    }
+
+    @media(max-width:1200px) {
+        .navfooterverticalcolumn h3 {
+            width: 100%;
+            font-size: 10px;
+            font-size: 15px;
+            position: static;
+        }
+
+        .navfooterverticalcolumn li a {
+            font-size: 10px;
+        }
+
+        .searchbar input {
+            width: 100%;
+        }
+
+        .list i {
+            display: block;
+        }
+
+        .nav-pin {
+            display: none;
+        }
+
+        .EN {
+            display: none;
+        }
+
+        .signin {
+            display: none;
+        }
+
+        .sign {
+            display: none;
+        }
+
+        .nav-cart {
+            display: none;
+        }
+
+        .locate {
+            display: none;
+        }
+
+        .footer h3 {
+            line-height: 12px;
+        }
+
+        .footer a {
+            line-height: 12px;
+        }
+    }
+
+    @media(max-width:1000px) {
+        .navfooter {
+            width: 100%;
+            position: static;
+        }
+
+        .navfooterverticalcolumn h3 {
+            font-size: 15px;
+        }
+
+        .navfooterverticalcolumn li a {
+            font-size: 15px;
+        }
+
+        .navfooterlogo a {
+            width: 200px;
+        }
+
+        .footer {
+            width: 100%;
+            position: static;
+        }
+
+        .foot {
+            width: 100%;
+            position: static;
+        }
+
+        .footer h3 a {
+            font-size: 11px;
+        }
+
+        .footer a {
+            font-size: 8px;
+        }
+
+        .cover h3 {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .cover ul li a {
+            font-size: 15px;
+            line-height: 25px;
+            gap: 1 90px;
+        }
+
+        .footer h3 {
+            line-height: 9px;
+        }
+
+        .footer a {
+            line-height: px;
+        }
+
+        .header {
+            width: 100%;
+        }
+    }
+
+    @media(max-width:900px) {
+        .navfooterverticalcolumn h3 {
+            font-size: 15px;
+        }
+
+        .navfooterverticalcolumn li a {
+            font-size: 15px;
+        }
+
+        .navfooterlogo a {
+            width: 200px;
+        }
+
+        .footer h3 {
+            font-size: 13px;
+            line-height: 8px;
+        }
+
+        .footer a {
+            font-size: 10px;
+            line-height: 8px;
+        }
+
+        .navfooterlogo button {
+            width: 150px;
+            font-size: 15px;
+        }
+
+        .footer {
+            width: 100%;
+            position: static;
+        }
+
+        .searchbar input {
+            width: 200px;
+        }
+
+        .foot {
+            width: 100%;
+            position: static;
+        }
+
+        .cover h3 {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .cover ul li a {
+            font-size: 15px;
+            line-height: 25px;
+            gap: 50px;
+        }
+    }
+
+    @media(max-width:800px) {
+        .navfooter {
+            width: 100%;
+            position: static;
+        }
+
+        .footer {
+            width: 100%;
+            position: static;
+            flex-direction: column;
+        }
+
+        .foot {
+            width: 100%;
+            position: static;
+
+        }
+
+        .footer h3 {
+            font-size: 15px;
+            line-height: 8px;
+        }
+
+        .footer a {
+            font-size: 13px;
+            line-height: 10px;
+        }
+
+        .navfooterverticalcolumn {
+            width: 100%;
+            position: static;
+        }
+
+        .header {
+            width: 100%;
+            /* flex-direction: column; */
+            position: static;
+        }
+
+        .cover {
+            width: 100%;
+            position: static;
+        }
+    }
+
+    @media(max-width:700px) {
+        .navfooterverticalcolumn {
+            width: 100%;
+            flex-direction: column;
+            position: static;
+        }
+
+        .navfooterlogo {
+            width: 100%;
+            position: static;
+            flex-direction: column;
+            display: block;
+        }
+
+        .navfooterlink {
+            flex-direction: column;
+            width: 100%;
+            position: static;
+        }
+
+        .cover {
+            width: 100%;
+            position: static;
+            flex-direction: column;
+            /* display: block; */
+        }
+    }
+
+    @media(max-width:600px) {
+        .navfooter {
+            width: 100%;
+            position: static;
+            flex-direction: column;
+        }
+
+        .footer {
+            width: 100%;
+            position: static;
+        }
+
+        .navfooterverticalcolumn {
+            width: 100%;
+            flex-direction: column;
+            position: static;
+        }
+
+        .cover {
+            width: 100%;
+            position: static;
+            flex-direction: column;
+        }
+
+        .foot {
+            width: 100%;
+            position: static;
+            flex-direction: column;
+        }
+        .nav-main{
+            position: static;
+            width: 100%;
+        }
+
+        .column {
+            display: block;
+            width: 100%;
+            /* flex-direction: column; */
+            position: static;
+        }
+    }
+
+    @media(max-width:500px) {
+        .navfooter {
+            width: 100%;
+            position: static;
+            flex-direction: column;
+        }
+
+        .searchbar input {
+            width: 100px;
+        }
+
+        /* .header a img {
+            display: none;
+        } */
+
+        .footer {
+            width: 100%;
+            position: static;
+            flex-direction: column;
+        }
+
+        .foot {
+            width: 100%;
+            position: static;
+            flex-direction: column;
+        }
+
+        .cover h3 {
+            line-height: 19px;
+        }
+
+        .cover ul li a {
+            line-height: 15px;
+        }
+
+        /* .mul a img {
+            display: block;
+        } */
+        .cus{
+            display: none;
+        }
+    }
+    @media(max-width:400px){
+        .pri{
+            display: none;
+        }
+    }
