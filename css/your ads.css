@@ -1018,10 +1018,6 @@ button:hover .snake img {
         line-height: 25px;
     }
 
-    .nav-main {
-     overflow-x: scroll;
-    }
-
     .cover ul li a {
         font-size: 18px;
         line-height: 25px;
@@ -1116,6 +1112,10 @@ button:hover .snake img {
 
     .footer a {
         line-height: 12px;
+    }
+
+    .nav-main {
+        overflow-x: scroll;
     }
 }
 

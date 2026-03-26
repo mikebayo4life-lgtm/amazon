@@ -57,7 +57,7 @@
 }
 
 .searchbar input {
-    width: 400px;
+    width: 300px;
     font-size: 12px;
     border: none;
     padding: 7px;
@@ -585,6 +585,62 @@
     padding: 1px;
 }
 
+.ba {
+    padding: 1rem;
+}
+
+.top p {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgb(15, 17, 17);
+}
+
+.sleve {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+}
+
+.sleve p {
+    text-align: center;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgb(15, 17, 17);
+}
+
+.free p {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2rem;
+    line-height: 24px;
+    color: rgb(15, 17, 17);
+}
+
+.free h2 {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 0.9rem;
+    font-weight: 700;
+    line-height: 44px;
+    color: rgb(15, 17, 17);
+}
+
+.free span {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(15, 17, 17);
+}
 
 .navfooter {
     background-color: #37475a;
@@ -947,6 +1003,11 @@ button:hover .snake img {
         line-height: 12px;
     }
 }
+@media(max-width:1100px){
+    .sleve{
+        overflow-x: scroll;
+    }
+}
 
 @media(max-width:1000px) {
     .navfooter {
@@ -1012,6 +1073,9 @@ button:hover .snake img {
     .navfooterverticalcolumn h3 {
         font-size: 15px;
     }
+    .nav-main{
+        font-size: 7px;
+    }
 
     .navfooterverticalcolumn li a {
         font-size: 15px;
@@ -1020,7 +1084,10 @@ button:hover .snake img {
     .navfooterlogo a {
         width: 200px;
     }
-
+.sleve{
+    width: 100%;
+    position: static;
+}
     .footer h3 {
         font-size: 13px;
         line-height: 8px;
