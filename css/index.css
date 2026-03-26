@@ -7,9 +7,10 @@
 
 .header {
     background-color: #151d28;
-    padding: 10px 20px;
+    padding: 2px;
     align-items: center;
     display: flex;
+    /* gap: 45px; */
     justify-content: space-around;
     color: white;
 }
@@ -585,7 +586,128 @@
     padding: 1px;
 }
 
+ /* .hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
 
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+.slide {
+  transition: 8s ease, transform 8s ease-out;
+  transform: scale(1.05);
+}
+
+.slide.active {
+  transform: scale(1);
+} */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease;
+  transform: scale(1.05);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0,0,0,0.3);
+  border: none;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+.dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.dots span.active {
+  opacity: 1;
+  background: orange;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .hero {
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    height: 250px;
+  }
+
+  .arrow {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  .hero {
+    height: 200px;
+  }
+}
 .navfooter {
     background-color: #37475a;
     font-family: "Amazon Ember", Arial, sans-serif;

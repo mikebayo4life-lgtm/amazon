@@ -110,7 +110,7 @@
                         <div>
                             <p><img src="Multimedia/images/usa.png" width="15px">
                                 You are shopping on Amazon.com</p>
-                                <div class="als">Change country/region</div>
+                            <div class="als">Change country/region</div>
                         </div>
                     </div>
                 </div>
@@ -309,8 +309,87 @@
             </div>
         </div>
     </header>
-    <div>
-        <a href=".bazaar.html"><img src="https://m.media-amazon.com/images/I/717O96HH+qL._SX3000_.jpg" width="100%"></a>
+    <div class="hero">
+        <div class="slider">
+            <a href="bazaar.html"><img src="https://m.media-amazon.com/images/I/717O96HH+qL._SX3000_.jpg" width="100%"
+                    class="slide active"></a>
+            <a href=""><img src="https://m.media-amazon.com/images/I/61-qXlhlE9L._SX3000_.jpg" width="100%"
+                    class="slide"></a>
+            <a href=""><img src="https://m.media-amazon.com/images/I/81L5P7EuB-L._SX3000_.jpg" width="100%"
+                    class="slide"></a>
+            <a href=""><img src="https://m.media-amazon.com/images/I/61H5Huk9ljL._SX3000_.jpg" width="100%"
+                    class="slide"></a>
+            <a href=""><img src="https://m.media-amazon.com/images/I/81DHzWBhMlL._SX3000_.jpg" width="100%"
+                    class="slide"></a>
+            <a href=""><img src="https://m.media-amazon.com/images/I/71vjLXDj36L._SX3000_.jpg" width="100%"
+                    class="slide"></a>
+            <a href=""><img src="https://m.media-amazon.com/images/I/61-qXlhlE9L._SX3000_.jpg" width="100%"
+                    class="slide"></a>
+            <a href=""><img src="https://m.media-amazon.com/images/I/71qcoYgEhzL._SX3000_.jpg" width="100%"
+                    class="slide"></a>
+
+            <button class="arrow left">&#10094;</button>
+            <button class="arrow right">&#10095;</button>
+
+            <div class="dots"></div>
+            <script>
+                const slides = document.querySelectorAll(".slide");
+                const leftBtn = document.querySelector(".left");
+                const rightBtn = document.querySelector(".right");
+                const dotsContainer = document.querySelector(".dots");
+
+                let index = 0;
+
+                /* Create dots */
+                slides.forEach((_, i) => {
+                    const dot = document.createElement("span");
+                    if (i === 0) dot.classList.add("active");
+                    dotsContainer.appendChild(dot);
+
+                    dot.addEventListener("click", () => {
+                        goToSlide(i);
+                    });
+                });
+
+                const dots = document.querySelectorAll(".dots span");
+
+                /* Show slide */
+                function showSlide(i) {
+                    slides.forEach(slide => slide.classList.remove("active"));
+                    dots.forEach(dot => dot.classList.remove("active"));
+
+                    slides[i].classList.add("active");
+                    dots[i].classList.add("active");
+                }
+
+                /* Go to slide */
+                function goToSlide(i) {
+                    index = i;
+                    showSlide(index);
+                }
+
+                /* Next */
+                function nextSlide() {
+                    index++;
+                    if (index >= slides.length) index = 0;
+                    showSlide(index);
+                }
+
+                /* Prev */
+                function prevSlide() {
+                    index--;
+                    if (index < 0) index = slides.length - 1;
+                    showSlide(index);
+                }
+
+                /* Auto slide */
+                setInterval(nextSlide, 4000);
+
+                /* Buttons */
+                rightBtn.addEventListener("click", nextSlide);
+                leftBtn.addEventListener("click", prevSlide);
+            </script>
+        </div>
     </div>
     <footer>
         <div class="navfooter">
@@ -371,11 +450,11 @@
                 <div class="navfooterlogo">
                     <a href=""><img src="./Multimedia/images/logo-1.svg" width="100px"></a>
                     <button class="nake">
-                            <i class="bi bi-globe2"></i>
-                            English
-                            
+                        <i class="bi bi-globe2"></i>
+                        English
+
                     </button>
-                       
+
                     <button>NGN Nigeria Naira</button>
                     <button class="usa">United States</button>
                 </div>
