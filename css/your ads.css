@@ -1019,7 +1019,7 @@ button:hover .snake img {
     }
 
     .nav-main {
-        display: none;
+     overflow-x: scroll;
     }
 
     .cover ul li a {

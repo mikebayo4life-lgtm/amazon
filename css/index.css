@@ -850,6 +850,9 @@ button:hover .snake img {
     .searchbar select {
         width: 100px;
     }
+    .nav-main {
+     overflow-x: scroll;
+    }
 }
 
 @media(max-width:1300px) {
