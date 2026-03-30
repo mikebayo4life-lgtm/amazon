@@ -312,101 +312,35 @@
     <div class="hero">
         <div class="slider">
             <a href=""><img src="https://m.media-amazon.com/images/I/717O96HH+qL._SX3000_.jpg" width="100%"
-                    class="slide active"></a>
+                    class="slide s1"></a>
             <a href=""><img src="https://m.media-amazon.com/images/I/61-qXlhlE9L._SX3000_.jpg" width="100%"
-                    class="slide"></a>
+                    class="slide s2"></a>
             <a href=""><img src="https://m.media-amazon.com/images/I/81L5P7EuB-L._SX3000_.jpg" width="100%"
-                    class="slide"></a>
+                    class="slide s3"></a>
             <a href=""><img src="https://m.media-amazon.com/images/I/61H5Huk9ljL._SX3000_.jpg" width="100%"
-                    class="slide"></a>
+                    class="slide s4"></a>
             <a href=""><img src="https://m.media-amazon.com/images/I/81DHzWBhMlL._SX3000_.jpg" width="100%"
-                    class="slide"></a>
+                    class="slide s5"></a>
             <a href=""><img src="https://m.media-amazon.com/images/I/71vjLXDj36L._SX3000_.jpg" width="100%"
-                    class="slide"></a>
+                    class="slide s6"></a>
             <a href=""><img src="https://m.media-amazon.com/images/I/61-qXlhlE9L._SX3000_.jpg" width="100%"
-                    class="slide"></a>
+                    class="slide s7"></a>
             <a href=""><img src="https://m.media-amazon.com/images/I/71qcoYgEhzL._SX3000_.jpg" width="100%"
-                    class="slide"></a>
-
-            <div class="dots"></div>
-            <script>
-                const slides = document.querySelectorAll(".slide");
-                const leftBtn = document.querySelector(".left");
-                const rightBtn = document.querySelector(".right");
-                const dotsContainer = document.querySelector(".dots");
-
-                let index = 0;
-
-                /* Create dots */
-                slides.forEach((_, i) => {
-                    const dot = document.createElement("span");
-                    if (i === 0) dot.classList.add("active");
-                    dotsContainer.appendChild(dot);
-
-                    dot.addEventListener("click", () => {
-                        goToSlide(i);
-                    });
-                });
-
-                const dots = document.querySelectorAll(".dots span");
-
-                /* Show slide */
-                function showSlide(i) {
-                    slides.forEach(slide => slide.classList.remove("active"));
-                    dots.forEach(dot => dot.classList.remove("active"));
-
-                    slides[i].classList.add("active");
-                    dots[i].classList.add("active");
-                }
-
-                /* Go to slide */
-                function goToSlide(i) {
-                    index = i;
-                    showSlide(index);
-                }
-
-                /* Next */
-                function nextSlide() {
-                    index++;
-                    if (index >= slides.length) index = 0;
-                    showSlide(index);
-                }
-
-                /* Prev */
-                function prevSlide() {
-                    index--;
-                    if (index < 0) index = slides.length - 1;
-                    showSlide(index);
-                }
-
-                /* Auto slide */
-                setInterval(nextSlide, 4000);
-
-                /* Buttons */
-                rightBtn.addEventListener("click", nextSlide);
-                leftBtn.addEventListener("click", prevSlide);
-            </script>
+                    class="slide s8"></a>
+        </div>
+        <div class="dots">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
         </div>
     </div>
-    <!-- <div class="game">
-            <h1>Get your game on</h1>
-            <a href=""><img
-                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_2x_EN._SY608_CB564799420_.jpg"
-                    width="190px"></a>
-        </div> -->
-
     <section class="banner">
         <div class="cards">
-
-            <!-- Card 1 -->
             <div class="card">
                 <h3>Get your game on</h3>
                 <img
                     src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_2x_EN._SY608_CB564799420_.jpg">
                 <a href="#">Shop gaming</a>
             </div>
-
-            <!-- Card 2 -->
             <div class="card">
                 <h3>New home arrivals under $50</h3>
                 <div class="grid">
@@ -434,7 +368,6 @@
                 <a href="#">Shop the latest from Home</a>
             </div>
 
-            <!-- Card 3 -->
             <div class="card">
                 <h3>Up to 95% off on your first 3 orders</h3>
                 <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/AmazonBazaar/Homepage/Fuji_CXTransition_Bazaar_SingleImageCard_2x._SY608_CB797653295_.jpg"
@@ -442,7 +375,6 @@
                 <a href="#">Download Amazon Bazaar app</a>
             </div>
 
-            <!-- Card 4 -->
             <div class="card">
                 <h3>Top categories in Kitchen appliances</h3>
                 <div>
@@ -466,9 +398,529 @@
                 <a href="#">Explore all products</a>
             </div>
         </div>
+        <div class="Cards">
+            <div class="card">
+                <h3>Shop Fashion for less</h3>
+                <div class="grid">
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_2x._SY232_CB624172947_.jpg"></a>
+                        <p>Jeans under $50</p>
+                    </div>
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_2x._SY232_CB623353881_.jpg"></a>
+                        <p>Tops under $25</p>
+                    </div>
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_2x._SY232_CB623353881_.jpg"></a>
+                        <p>Dress under $30</p>
+                    </div>
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_2x._SY232_CB624172947_.jpg"></a>
+                        <p>Shoes under $50</p>
+                    </div>
+                    <a href=""></a>
+                </div>
+                <a href="">See all deals</a>
+            </div>
+            <div class="card">
+                <h3>Up to 45% off on home refresh</h3>
+                <div class="grid">
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/melody/uploads/d19326ab-e5f4-452c-9b5d-0fdd2a226599_MuseDesktop372X232/AIS_BSS_SeasonDeals_2026_Exports_BSS_09_Muse_Prod_melody_homepage_372x232_2X._SY232_CB783329931_.jpg"></a>
+                        <p>Home decor</p>
+                    </div>
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/melody/uploads/b381f5ef-07a4-4725-89c0-8d546410eccf_MuseDesktop372X232/AIS_BSS_SeasonDeals_2026_Exports_BSS_15_Muse_Prod_melody_homepage_372x232_2X._SY232_CB783329972_.jpg"></a>
+                        <p>Home Improvement</p>
+                    </div>
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/melody/uploads/126f7a69-a559-42df-a01a-90fbdeafa24c_MuseDesktop372X232/AIS_BSS_SeasonDeals_2026_Exports_BSS_11_Muse_Prod_melody_homepage_372x232_2X._SY232_CB783329925_.jpg"></a>
+                        <p>Cleaning essentials </p>
+                    </div>
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/melody/uploads/d2ef41b4-363c-4014-9640-c79d834f7b25_MuseDesktop372X232/AIS_BSS_SeasonDeals_2026_Exports_BSS_13_Muse_Prod_melody_homepage_372x232_2X._SY232_CB783329948_.jpg"></a>
+                        <p>Storage & organizers</p>
+                    </div>
+                </div>
+                <a href="">Shop Season Deals</a>
+            </div>
+            <div class="card">
+                <h3>Fashion trends you like</h3>
+                <div class="grid">
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_2_x2._SY232_CB595261253_.jpg"></a>
+                        <p>Dresses</p>
+                    </div>
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_3_x2._SY232_CB595261253_.jpg"></a>
+                        <p>Knits</p>
+                    </div>
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_1_x2._SY232_CB595261253_.jpg"></a>
+                        <p>Jackets</p>
+                    </div>
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_4_x2._SY232_CB595261253_.jpg"></a>
+                        <p>Jewelry</p>
+                    </div>
+                    <a href="">Explore more</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Easy updates for elevated spaces</h3>
+                <div class="grid">
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_LaundryLuxe_D_Quad_372x232._SY232_CB594237035_.jpg"></a>
+                        <p>Baskets & hampers</p>
+                    </div>
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Kitchen_D_Quad_372x232._SY232_CB594237035_.jpg"></a>
+                        <p>Hardware</p>
+                    </div>
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_AccentFurniture_D_Quad_372x232._SY232_CB594237035_.jpg"></a>
+                        <p>Accent furniture</p>
+                    </div>
+                    <div>
+                        <a href=""><img
+                                src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Hallway_D_Quad_372x232._SY232_CB594237035_.jpg"></a>
+                        <p>Wallpaper & paint</p>
+                    </div>
+                    <a href="">Shop home product</a>
+                </div>
+            </div>
+        </div>
+        <div class="best">
+            <h1>Best Sellers in Home & Kitchen</h1>
+            <div class="crem">
+                <img src="https://m.media-amazon.com/images/I/61o6SkL3DOL._AC_SY400_.jpg" width="160px">
+                <img src="https://m.media-amazon.com/images/I/61sS-XIvEXL._AC_SY400_.jpg" width="50px">
+                <img src="https://m.media-amazon.com/images/I/71Si2QlAb3L._AC_SY400_.jpg" width="150px">
+                <img src="https://m.media-amazon.com/images/I/81Cn1+lUraL._AC_SY400_.jpg" width="280px">
+                <img src="https://m.media-amazon.com/images/I/713+CDSRsLL._AC_SY400_.jpg" width="170px">
+                <img src="https://m.media-amazon.com/images/I/71Zg+lIkXeL._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/914ufIDbM1L._AC_SY400_.jpg" width="210px">
+                <img src="https://m.media-amazon.com/images/I/51-U5dEbEBL._AC_SY400_.jpg" width="90px">
+                <img src="https://m.media-amazon.com/images/I/619C-vVJjdL._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/91YrLTBnMcL._AC_SY400_.jpg" width="150px">
+                <img src="https://m.media-amazon.com/images/I/81bpKKv68-L._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/71lChEqublL._AC_SY400_.jpg" width="250px">
+                <img src="https://m.media-amazon.com/images/I/71oERUaDzWL._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/71xIgTqSN6L._AC_SY400_.jpg" width="150px">
+                <img src="https://m.media-amazon.com/images/I/71UddNOmg5L._AC_SY400_.jpg" width="210px">
+                <img src="https://m.media-amazon.com/images/I/811-tPSBMML._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/71kHwy9jklL._AC_SY400_.jpg" width="210px">
+                <img src="https://m.media-amazon.com/images/I/7170px9vGUL._AC_SY400_.jpg" width="210px">
+            </div>
+        </div>
         <div class="win">
             <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/AmazonBazaar/Homepage/Fuji_BTFBanner_2X_EN._CB779739048_.jpg"
                 width="100%">
+        </div>
+        <div class="Cards">
+            <div class="card">
+                <h3>Level up your beauty routine</h3>
+                <div class="grid">
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_2x_Make-up._SY232_CB558654384_.jpg">
+                        <p>Makeup</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_2x_Brushes._SY232_CB558654384_.jpg">
+                        <p>Brushes</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_2x_Sponges._SY232_CB558654384_.jpg">
+                        <p>Sponges</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_2x_Mirrors._SY232_CB558654384_.jpg">
+                        <p>Mirrors</p>
+                    </div>
+                    <div>
+                        <a href="">See more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Gear up to get fit</h3>
+                <div class="grid">
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_2x_Clothing._SY232_CB549022351_.jpg">
+                        <p>Clothing</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_2x_Clothing._SY232_CB549022351_.jpg">
+                        <p>Trackers</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_2x_Equipment._SY232_CB549022351_.jpg">
+                        <p>Eqiupment</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_2x_Equipment._SY232_CB549022351_.jpg">
+                        <p>Deals</p>
+                    </div>
+                    <div>
+                        <a href="">Discover more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Most-loved watches</h3>
+                <div class="grid">
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/WomenWatches_2x._SY232_CB564394432_.jpg">
+                        <p>Women</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/MenWatches_2x._SY232_CB564394432_.jpg">
+                        <p>Men</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/GirlWatches_2x._SY232_CB564394432_.jpg">
+                        <p>Girls</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/GirlWatches_2x._SY232_CB564394432_.jpg">
+                        <p>Boys</p>
+                    </div>
+                    <div>
+                        <a href="">Discover more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Level up your gaming</h3>
+                <div class="grid">
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_NW_GamingWeek_PC_v2_2x._SY232_CB558844445_.jpg">
+                        <p>Pc gaming</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_NW_GamingWeek_PC_v2_2x._SY232_CB558844445_.jpg">
+                        <p>Xbox</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_SW_GamingWeek_Sony_v2_2x._SY232_CB558844445_.jpg">
+                        <p>Playstation</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_SE_GamingWeek_Nintendo_v2_2x._SY232_CB558844445_.jpg">
+                        <p>Nintendo Switch</p>
+                    </div>
+                    <div>
+                        <a href="">Shop the Lastest in gaming</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="best">
+            <h1>Top picks for Nigeria</h1>
+            <div class="crem">
+                <img src="https://m.media-amazon.com/images/I/51lP01--ejL._AC_SY400_.jpg" width="120px">
+                <img src="https://m.media-amazon.com/images/I/61qCeGkiTXL._AC_SY400_.jpg" width="150px">
+                <img src="https://m.media-amazon.com/images/I/817WrflosJL._AC_SY400_.jpg" width="270px">
+                <img src="https://m.media-amazon.com/images/I/81Lg7Hp2Y0L._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/81i5KcFKysL._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/714VRmqcVmL._AC_SY400_.jpg" width="250px">
+                <img src="https://m.media-amazon.com/images/I/61gHRyBb8aL._AC_SY400_.jpg" width="300px">
+                <img src="https://m.media-amazon.com/images/I/71WeyOjxqQL._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/51vCOIvTYBL._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/510xpQDIqWL._AC_SY400_.jpg" width="130px">
+                <img src="https://m.media-amazon.com/images/I/61iUJ3uG+2L._AC_SY400_.jpg" width="50%">
+                <img src="https://m.media-amazon.com/images/I/81LzgTaqPKL._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/71ezZy16ZML._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/61+iTT1HE+L._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/71YEFomKayL._AC_SY400_.jpg" width="250px">
+                <img src="https://m.media-amazon.com/images/I/81y0q1iKzeL._AC_SY400_.jpg" width="190px">
+            </div>
+        </div>
+        <div class="best">
+            <h1>Best Sellers in Computers & Accessories</h1>
+            <div class="crem">
+                <img src="https://m.media-amazon.com/images/I/71nVIiWEcgL._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/51IFiSD+kCL._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/71K30PIVQmL._AC_SY400_.jpg" width="150px">
+                <img src="https://m.media-amazon.com/images/I/71CRaMOcDvL._AC_SY400_.jpg" width="260px">
+                <img src="https://m.media-amazon.com/images/I/71iZhpB2FpL._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/71K00r5z4iL._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/71W17ZX8yuL._AC_SY400_.jpg" width="320px">
+                <img src="https://m.media-amazon.com/images/I/61j-0VbdDQL._AC_SY400_.jpg" width="200px">
+                <img src="https://m.media-amazon.com/images/I/51nliDIEP9L._AC_SY400_.jpg" width="130px">
+                <img src="https://m.media-amazon.com/images/I/81Q9vMNUOyL._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/51nQJi7RvAL._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/51HbD2W7FtL._AC_SY400_.jpg" width="210px">
+                <img src="https://m.media-amazon.com/images/I/51xCw9RKssL._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/71PNV23+hWL._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/61Kez7aUF9L._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/71ZoOL+C0zL._AC_SY400_.jpg" width="230px">
+            </div>
+        </div>
+        <div class="Cards">
+            <div class="card">
+                <h3>Most-loved travel essentials</h3>
+                <div class="grid">
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/Backpack_2x._SY232_CB566100767_.jpg">
+                        <p>Backpacks</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/TravelBag_2x._SY232_CB566100767_.jpg">
+                        <p>Suitcases</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/Accessories_2x._SY232_CB566100767_.jpg">
+                        <p>Accessories</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/Handbags_2x._SY232_CB566100767_.jpg">
+                        <p>Handbags</p>
+                    </div>
+                </div>
+                <a href="">Discover more</a>
+            </div>
+            <div class="card">
+                <h3>Have more fun with family</h3>
+                <div class="grid">
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_2x_Playground_sets._SY232_CB558654384_.jpg">
+                        <p>Outdoor Play Sets</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_2x_STEM_toys_or_learning_toys._SY232_CB558654384_.jpg">
+                        <p>Learning toys</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_2x_Action_figure._SY232_CB558654384_.jpg">
+                        <p>Action figures</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_2x_Pretend_Play_Toys._SY232_CB558654384_.jpg">
+                        <p>Pretend Play Toys</p>
+                    </div>
+                </div>
+                <a href="">See more</a>
+            </div>
+            <div class="card">
+                <h3>Level up your PC here</h3>
+                <div class="grid">
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_2x_Laptop._SY232_CB549022351_.jpg">
+                        <p>Laptops</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_2x_PC._SY232_CB549022351_.jpg">
+                        <p>PCs</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_2x_Hard_Drives._SY232_CB549022351_.jpg">
+                        <p>Hard Drives</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_2x_Monitors._SY232_CB549022351_.jpg">
+                        <p>Monitors</p>
+                    </div>
+                </div>
+                <a href="">Discover more</a>
+            </div>
+            <div class="card">
+                <h3>Score the top PCs & Accessories</h3>
+                <div class="grid">
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_2x_Desktops._SY232_CB558654384_.jpg">
+                        <p>Desktops</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_2x_laptop._SY232_CB558654384_.jpg">
+                        <p>Laptops</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_2x_Hard_Drives._SY232_CB558654384_.jpg">
+                        <p>Hard Drives</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_2x_Accessories._SY232_CB558654384_.jpg">
+                        <p>PC Accessories</p>
+                    </div>
+                </div>
+                <a href="">See more</a>
+            </div>
+        </div>
+        <div class="best">
+            <h1>Best Sellers in Kitchen & Dining</h1>
+            <div class="crem">
+                <img src="https://m.media-amazon.com/images/I/613UCQXJDwL._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/71v-pTar1AL._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/71Y4-ItMNBL._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/81Ng7kd0cIL._AC_SY400_.jpg" width="210px">
+                <img src="https://m.media-amazon.com/images/I/51o8AcOPpjL._AC_SY400_.jpg" width="80px">
+                <img src="https://m.media-amazon.com/images/I/718Tr1uB1OL._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/71cHyyOt7YL._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/61VWyLafP+L._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/713W0aBBUbL._AC_SY400_.jpg" width="350px">
+                <img src="https://m.media-amazon.com/images/I/71jqHhElawL._AC_SY400_.jpg" width="150px">
+                <img src="https://m.media-amazon.com/images/I/61YO+aQShHL._AC_SY400_.jpg" width="330px">
+                <img src="https://m.media-amazon.com/images/I/61MqSic7o9L._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/61KQgdErOCL._AC_SY400_.jpg" width="230px">
+                <img src="https://m.media-amazon.com/images/I/81tZmTkj28L._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/71iQV0KGOCL._AC_SY400_.jpg" width="190px">
+                <img src="https://m.media-amazon.com/images/I/817HSkyd6KL._AC_SY400_.jpg" width="350px">
+                <img src="https://m.media-amazon.com/images/I/71LHFQLEBWL._AC_SY400_.jpg" width="230px">
+            </div>
+        </div>
+        <div class="Cards">
+            <div class="card">
+                <h3>Gaming merchandise</h3>
+                <div class="grid">
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Apparel_2x._SY232_CB667159060_.jpg">
+                        <p>Apparel</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Hat_2x._SY232_CB667159060_.jpg">
+                        <p>Hats</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Figure_2x._SY232_CB667159060_.jpg">
+                        <p>Action figures</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mug_2x._SY232_CB667159063_.jpg">
+                        <p>Mugs</p>
+                    </div>
+                </div>
+                <a href="">See more</a>
+            </div>
+            <div class="card">
+                <h3>Explore more in Sports</h3>
+                <div class="grid">
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Cycling_2X._SY232_CB563192628_.jpg">
+                        <p>Cycling</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Running_2X._SY232_CB563192628_.jpg">
+                        <p>Running</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/ExerciseAndFitness_2X._SY232_CB563192628_.jpg">
+                        <p>Exercise & Fitness</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Golf_2X._SY232_CB563192628_.jpg">
+                        <p>Golf</p>
+                    </div>
+                </div>
+                <a href="">Explore more</a>
+            </div>
+            <div class="card">
+                <h3>Home & Kitchen essentials</h3>
+                <div class="grid">
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAUOct2024/Coffee_Machine_2x._SY232_CB545166645_.jpg">
+                        <p>Coffee Machines</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAUOct2024/Coffee_Machine_2x._SY232_CB545166645_.jpg">
+                        <p>Multi-Cookers</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAUOct2024/VaccumCleaner_2x._SY232_CB545166645_.jpg">
+                        <p>Vacuum Cleaner</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAUOct2024/Iron_2x._SY232_CB545166645_.jpg">
+                        <p>Iron and Steamer</p>
+                    </div>
+                </div>
+                <a href="">Shop now</a>
+            </div>
+            <div class="card">
+                <h3>Shop for your home essentials</h3>
+                <div class="grid">
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/CleaningTool_2x._SY232_CB563137408_.jpg">
+                        <p>Cleaning Tools</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeStorage_2x._SY232_CB563137408_.jpg">
+                        <p>Home Storage</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeDecor_2x._SY232_CB563137408_.jpg">
+                        <p>Home Decor</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Bedding_2x._SY232_CB563137408_.jpg">
+                        <p>Bedding</p>
+                    </div>
+                </div>
+                <a href="">Discover more in Home</a>
+            </div>
         </div>
         <div class="best">
             <h1>Best Sellers in Books</h1>
@@ -477,9 +929,20 @@
                 <a href=""><img src="https://m.media-amazon.com/images/I/71PjIDe6FLL._AC_SY400_.jpg" width="170px"></a>
                 <a href=""><img src="https://m.media-amazon.com/images/I/810bsxh1MmL._AC_SY400_.jpg" width="250px"></a>
                 <a href=""><img src="https://m.media-amazon.com/images/I/71ihGxMQEBL._AC_SY400_.jpg" width="175px"></a>
-                <a href=""><img src="https://m.media-amazon.com/images/I/81PndgdGCXL._AC_SY400_.jpg" width="170px"></a> 
+                <a href=""><img src="https://m.media-amazon.com/images/I/81PndgdGCXL._AC_SY400_.jpg" width="170px"></a>
                 <a href=""><img src="https://m.media-amazon.com/images/I/91yskyVPAmL._AC_SY400_.jpg" width="250px"></a>
                 <a href=""><img src="https://m.media-amazon.com/images/I/91RO3WpgHFL._AC_SY400_.jpg" width="250px"></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/81mIz5vLAfL._AC_SY400_.jpg" width="250px"></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/91ZVf3kNrcL._AC_SY400_.jpg" width="160px"></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/81uv7QtqJ0L._AC_SY400_.jpg" width="260px"></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71qeuqh+XIL._AC_SY400_.jpg" width="150px"></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71EUp8-YNwL._AC_SY400_.jpg" width="230px"></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/81mpSoJzv4L._AC_SY400_.jpg" width="220px"></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/81gGOUeww5L._AC_SY400_.jpg" width="150px"></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/818PqOiT44L._AC_SY400_.jpg" width="140px"></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71sOjwYbBgL._AC_SY400_.jpg" width="250px"></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/81qsstEtrgL._AC_SY400_.jpg" width="350px"></a>
+
             </div>
         </div>
         <div class="best">
