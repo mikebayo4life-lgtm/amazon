@@ -1085,6 +1085,7 @@
         .footer a {
             line-height: 12px;
         }
+
         .nav-main {
             overflow-x: scroll;
         }
@@ -1153,14 +1154,24 @@
     @media(max-width:900px) {
         .navfooterverticalcolumn h3 {
             font-size: 15px;
+            flex-direction: column;
+            line-height: 35px;
+            position: static;
         }
 
         .navfooterverticalcolumn li a {
-            font-size: 15px;
+            font-size: 13px;
+            flex-direction: column;
+            position: static;
+            line-height: 35px;
         }
 
         .navfooterlogo a {
             width: 200px;
+        }
+
+        .nav-main {
+            display: none;
         }
 
         .footer h3 {
@@ -1207,6 +1218,7 @@
     @media(max-width:800px) {
         .navfooter {
             width: 100%;
+            line-height: 35px;
             position: static;
         }
 
@@ -1254,6 +1266,7 @@
             width: 100%;
             flex-direction: column;
             position: static;
+            line-height: 35px;
         }
 
         .navfooterlogo {
@@ -1263,10 +1276,12 @@
             display: block;
         }
 
-        .navfooterlink {
+        .navfooterlink ul{
             flex-direction: column;
             width: 100%;
+            margin-bottom: 2rem;
             position: static;
+            padding: 1.5rem;
         }
 
         .cover {
@@ -1317,6 +1332,11 @@
             width: 100%;
             /* flex-direction: column; */
             position: static;
+        }
+        .navfooterlogo{
+            flex-direction: column;
+            position: static;
+            width: 100%;
         }
     }
 

@@ -1075,10 +1075,11 @@ button:hover .snake img {
     }
     .nav-main{
         font-size: 7px;
+        display: none;
     }
 
     .navfooterverticalcolumn li a {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .navfooterlogo a {
@@ -1154,12 +1155,13 @@ button:hover .snake img {
 
     .footer a {
         font-size: 13px;
-        line-height: 10px;
+        line-height: 50px;
     }
 
     .navfooterverticalcolumn {
         width: 100%;
         position: static;
+        line-height: 35px;
     }
 
     .header {
@@ -1171,6 +1173,7 @@ button:hover .snake img {
     .cover {
         width: 100%;
         position: static;
+        line-height: 25px;
     }
 }
 
@@ -1188,10 +1191,11 @@ button:hover .snake img {
         display: block;
     }
 
-    .navfooterlink {
+    .navfooterlink ul{
         flex-direction: column;
         width: 100%;
         position: static;
+        margin-bottom: 2rem;
     }
 
     .cover {
