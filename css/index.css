@@ -15,6 +15,10 @@
     color: white;
 }
 
+.header img:hover {
+    border: 2px solid white;
+}
+
 .mul a img {
     display: none;
     border-radius: 10px;
@@ -32,6 +36,10 @@
 
 .locate p a span {
     font-size: 14px;
+}
+
+.locate:hover {
+    border: 2px solid white;
 }
 
 .searchbar select option {
@@ -95,7 +103,7 @@
 
 .EN a:hover {
     border: 1px solid white;
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
 .EN a i {
@@ -393,7 +401,6 @@
 
 .nav-left:hover {
     border: 2px solid white;
-    padding: 1px;
 }
 
 .nav-left p {
@@ -413,9 +420,8 @@
 .nav-main a {
     text-decoration: none;
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 12px;
     color: rgb(254, 254, 254);
 }
 
@@ -568,8 +574,11 @@
     background-color: rgba(211, 211, 211, 0.452);
     width: 100%;
     height: 50px;
-    /* padding: 4rem; */
 }
+
+/* .nav-main :hover .all{
+    display: block;
+} */
 
 .nav-pin {
     text-align: right;
@@ -580,12 +589,10 @@
 
 .nav-pin a:hover {
     border: 2px solid white;
-    padding: 1px;
 }
 
 .nav-main a:hover {
     border: 2px solid white;
-    padding: 1px;
 }
 
 .hero {
@@ -667,36 +674,69 @@
 }
 
 .dots {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 .dots span {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin: 4px;
-  background: white;
-  border-radius: 50%;
-  opacity: 0.5;
-  animation: dot 32s infinite;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: dot 32s infinite;
 }
 
-.dots span:nth-child(1) { animation-delay: 0s; }
-.dots span:nth-child(2) { animation-delay: 4s; }
-.dots span:nth-child(3) { animation-delay: 8s; }
-.dots span:nth-child(4) { animation-delay: 12s; }
-.dots span:nth-child(5) { animation-delay: 16s; }
-.dots span:nth-child(6) { animation-delay: 20s; }
-.dots span:nth-child(7) { animation-delay: 24s; }
-.dots span:nth-child(8) { animation-delay: 28s; }
+.dots span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dots span:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.dots span:nth-child(3) {
+    animation-delay: 8s;
+}
+
+.dots span:nth-child(4) {
+    animation-delay: 12s;
+}
+
+.dots span:nth-child(5) {
+    animation-delay: 16s;
+}
+
+.dots span:nth-child(6) {
+    animation-delay: 20s;
+}
+
+.dots span:nth-child(7) {
+    animation-delay: 24s;
+}
+
+.dots span:nth-child(8) {
+    animation-delay: 28s;
+}
 
 @keyframes dot {
-  0%,100% { opacity: 0.3; }
-  5%,12% { opacity: 1; background: orange; }
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    5%,
+    12% {
+        opacity: 1;
+        background: orange;
+    }
 }
+
 .banner {
     background: linear-gradient(to bottom, rgb(164, 115, 164), rgb(214, 199, 214));
     padding: 40px 20px 120px;
@@ -886,17 +926,22 @@
 
 .cover {
     padding: 2%;
+    font-size: 12px;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
 
+.Getoknow h3 {
+    font-size: 12px;
+}
+
 .cover h3 {
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
-    color: rgb(221, 221, 221);
-    line-height: 25px;
+    line-height: 16.8px;
+    color: rgb(255, 255, 255);
 }
 
 .navfooterverticalcolumn li {
@@ -1191,6 +1236,10 @@ button:hover .snake img {
         display: none;
     }
 
+    .searchbar input{
+        width: 500px;
+    }
+
     .nav-cart {
         display: none;
     }
@@ -1290,6 +1339,9 @@ button:hover .snake img {
         font-size: 10px;
         line-height: 8px;
     }
+    .nav-main{
+        display: none;
+    }
 
     .navfooterlogo button {
         width: 150px;
@@ -1311,12 +1363,12 @@ button:hover .snake img {
     }
 
     .cover h3 {
-        font-size: 18px;
+        font-size: 15px;
         line-height: 25px;
     }
 
     .cover ul li a {
-        font-size: 15px;
+        font-size: 12px;
         line-height: 25px;
         gap: 50px;
     }
@@ -1327,6 +1379,9 @@ button:hover .snake img {
 
     .Cards {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .searchbar input{
+        width: 400px;
     }
 }
 
@@ -1408,6 +1463,16 @@ button:hover .snake img {
         flex-direction: column;
         /* display: block; */
     }
+
+    .navfooterlink ul {
+        width: 100%;
+        position: static;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .searchbar input{
+        width: 300px;
+    }
 }
 
 @media(max-width:600px) {
@@ -1446,6 +1511,9 @@ button:hover .snake img {
         /* flex-direction: column; */
         position: static;
     }
+    .searchbar input{
+        width: 100%;
+    }
 }
 
 @media(max-width:500px) {
@@ -1463,9 +1531,12 @@ button:hover .snake img {
         grid-template-columns: 1fr;
     }
 
+    .nav-main a {
+        font-size: 12px;
+    }
+
     .Cards {
         grid-template-columns: 1fr;
-
     }
 
     .hero {
@@ -1491,6 +1562,10 @@ button:hover .snake img {
         flex-direction: column;
     }
 
+    .nav-main {
+        font-size: 10px;
+    }
+
     .foot {
         width: 100%;
         position: static;
@@ -1498,11 +1573,11 @@ button:hover .snake img {
     }
 
     .cover h3 {
-        line-height: 19px;
+        line-height: 39px;
     }
 
     .cover ul li a {
-        line-height: 15px;
+        line-height: 35px;
     }
 
     .mul a img {
