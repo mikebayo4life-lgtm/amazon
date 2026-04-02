@@ -82,6 +82,24 @@
         /* height: 40.9px; */
     }
 
+    .icons {
+        background-color: #febd69;
+        font-size: 19px;
+        border: none;
+        height: 28.659;
+        margin: auto;
+        border-radius: 10px;
+        display: none;
+        cursor: pointer;
+        color: rgb(65, 64, 64);
+        font-weight: 700;
+        padding: 8px 15px;
+    }
+
+    .icons:hover {
+        background-color: #febd69ef;
+    }
+
     .icon:hover {
         background-color: #febd69ef;
     }
@@ -1045,14 +1063,13 @@
         .navfooterverticalcolumn li a {
             font-size: 10px;
         }
+        .nav-main{
+            overflow-x: scroll;
+        }
 
         .searchbar input {
             width: 100%;
         }
-
-        /* .list i {
-            display: block;
-        } */
 
         .nav-pin {
             display: none;
@@ -1060,6 +1077,9 @@
 
         .EN {
             display: none;
+        }
+        .list i{
+            display: block;
         }
 
         .signin {
@@ -1276,7 +1296,7 @@
             display: block;
         }
 
-        .navfooterlink ul{
+        .navfooterlink ul {
             flex-direction: column;
             width: 100%;
             margin-bottom: 2rem;
@@ -1333,7 +1353,8 @@
             /* flex-direction: column; */
             position: static;
         }
-        .navfooterlogo{
+
+        .navfooterlogo {
             flex-direction: column;
             position: static;
             width: 100%;
@@ -1347,8 +1368,12 @@
             flex-direction: column;
         }
 
-        .searchbar input {
-            width: 100px;
+        .searchbar{
+            display: none;    
+        }
+
+        .icons{
+            display: block;
         }
 
         .header a img {
