@@ -812,6 +812,10 @@
     color: rgb(15, 17, 17);
 }
 
+.grid img{
+    width: 100%;
+}
+
 .small-grid {
     display: flex;
     gap: 5px;
@@ -849,13 +853,16 @@
 .best {
     background-color: white;
     font-family: "Amazon Ember", Arial, sans-serif;
-    font-size: 13px;
     margin-top: 2rem;
     padding: 1rem;
     font-weight: 700;
     line-height: 31.5px;
     border-radius: 5px;
     color: rgb(15, 17, 17);
+}
+
+.best h1{
+    font-size: 18px;
 }
 
 .cream {
@@ -870,6 +877,10 @@
     overflow-x: scroll;
     gap: 30px;
     margin-top: 1rem;
+}
+
+.crem img{
+    width: 100;
 }
 
 .pef {
@@ -1273,6 +1284,9 @@ button:hover .snake img {
     .footer a {
         line-height: 12px;
     }
+    .nav-main{
+        overflow-x: auto;
+    }
 }
 
 @media(max-width:1000px) {
@@ -1280,6 +1294,14 @@ button:hover .snake img {
         width: 100%;
         position: static;
     }
+
+    .crem img{
+        width: 100%;
+    }
+
+    /* .cream a img{
+        width: 100%;
+    } */
 
     .navfooterverticalcolumn h3 {
         font-size: 15px;
@@ -1338,6 +1360,10 @@ button:hover .snake img {
 @media(max-width:900px) {
     .navfooterverticalcolumn h3 {
         font-size: 15px;
+    }
+
+    .best h1 {
+        font-size: 13;
     }
 
     .navfooterverticalcolumn li a {
